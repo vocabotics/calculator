@@ -6,16 +6,16 @@ const CalculatorDisplay: React.FC = () => {
   const { display, previousValue, operation, isError } = useCalculatorStore();
 
   return (
-    <Card className="p-4 mb-4 bg-gray-900 text-white">
+    <Card className="p-4 mb-4 bg-pink-900 text-white">
       <div className="text-right">
         {previousValue && operation && (
-          <div className="text-sm text-gray-400 mb-1">
+          <div className="text-sm text-pink-300 mb-1">
             {previousValue} {operation}
           </div>
         )}
         <div 
           className={`text-3xl font-mono break-all ${
-            isError ? 'text-red-400' : 'text-white'
+            isError ? 'text-pink-300' : 'text-white'
           }`}
         >
           {display}
