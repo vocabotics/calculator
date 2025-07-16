@@ -20,15 +20,15 @@ const CalculatorButton: React.FC<CalculatorButtonProps> = ({
   const getVariantStyles = () => {
     switch (variant) {
       case 'operator':
-        return 'bg-green-600 hover:bg-green-700 text-white';
+        return 'bg-yellow-600 hover:bg-yellow-700 text-white';
       case 'function':
-        return 'bg-green-500 hover:bg-green-600 text-white';
+        return 'bg-yellow-500 hover:bg-yellow-600 text-white';
       case 'equals':
-        return 'bg-green-700 hover:bg-green-800 text-white';
+        return 'bg-yellow-700 hover:bg-yellow-800 text-white';
       case 'clear':
-        return 'bg-green-400 hover:bg-green-500 text-white';
+        return 'bg-yellow-400 hover:bg-yellow-500 text-white';
       default:
-        return 'bg-green-100 hover:bg-green-200 text-green-900';
+        return 'bg-yellow-100 hover:bg-yellow-200 text-yellow-900';
     }
   };
 
