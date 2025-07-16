@@ -54,9 +54,9 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-amber-100">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-pink-600 to-rose-700 text-white py-12">
+      <div className="bg-gradient-to-r from-orange-600 to-amber-700 text-white py-12">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -67,24 +67,24 @@ const HomePage: React.FC = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Professional Calculator
             </h1>
-            <p className="text-xl md:text-2xl text-pink-100 mb-8">
+            <p className="text-xl md:text-2xl text-orange-100 mb-8">
               Advanced mathematical calculations with scientific functions
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-pink-300 rounded-full"></div>
+                <div className="w-2 h-2 bg-orange-300 rounded-full"></div>
                 <span>Basic & Scientific Modes</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-pink-300 rounded-full"></div>
+                <div className="w-2 h-2 bg-orange-300 rounded-full"></div>
                 <span>Memory Functions</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-pink-300 rounded-full"></div>
+                <div className="w-2 h-2 bg-orange-300 rounded-full"></div>
                 <span>History Tracking</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-pink-300 rounded-full"></div>
+                <div className="w-2 h-2 bg-orange-300 rounded-full"></div>
                 <span>Keyboard Support</span>
               </div>
             </div>
@@ -108,17 +108,17 @@ const HomePage: React.FC = () => {
               {mode === 'basic' ? <BasicCalculator /> : <ScientificCalculator />}
               
               {/* Keyboard Shortcuts Info */}
-              <div className="mt-6 p-4 bg-pink-50 rounded-lg">
-                <h3 className="font-semibold text-pink-900 mb-2">Keyboard Shortcuts</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm text-pink-700">
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">0-9</kbd> Numbers</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">+</kbd> Addition</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">-</kbd> Subtraction</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">*</kbd> Multiplication</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">/</kbd> Division</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">.</kbd> Decimal</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">Enter</kbd> Equals</div>
-                  <div><kbd className="bg-white px-1 rounded border border-pink-200">Esc</kbd> Clear All</div>
+              <div className="mt-6 p-4 bg-orange-50 rounded-lg">
+                <h3 className="font-semibold text-orange-900 mb-2">Keyboard Shortcuts</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm text-orange-700">
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">0-9</kbd> Numbers</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">+</kbd> Addition</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">-</kbd> Subtraction</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">*</kbd> Multiplication</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">/</kbd> Division</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">.</kbd> Decimal</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">Enter</kbd> Equals</div>
+                  <div><kbd className="bg-white px-1 rounded border border-orange-200">Esc</kbd> Clear All</div>
                 </div>
               </div>
             </div>
@@ -143,8 +143,8 @@ const HomePage: React.FC = () => {
           className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl text-pink-600">➕</span>
+            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl text-orange-600">➕</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">Basic Operations</h3>
             <p className="text-gray-600 text-sm">
@@ -153,8 +153,8 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl text-pink-600">🔬</span>
+            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl text-orange-600">🔬</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">Scientific Functions</h3>
             <p className="text-gray-600 text-sm">
@@ -163,8 +163,8 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl text-pink-600">💾</span>
+            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl text-orange-600">💾</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">Memory Functions</h3>
             <p className="text-gray-600 text-sm">
@@ -173,8 +173,8 @@ const HomePage: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl text-pink-600">📝</span>
+            <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <span className="text-2xl text-orange-600">📝</span>
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">History Tracking</h3>
             <p className="text-gray-600 text-sm">
@@ -194,20 +194,20 @@ const HomePage: React.FC = () => {
             Mathematical Constants & Functions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="text-center p-4 bg-pink-50 rounded-lg">
-              <div className="text-3xl font-mono font-bold text-pink-600 mb-2">π</div>
-              <div className="text-sm text-pink-700">Pi (3.14159...)</div>
-              <div className="text-xs text-pink-500">Ratio of circumference to diameter</div>
+            <div className="text-center p-4 bg-orange-50 rounded-lg">
+              <div className="text-3xl font-mono font-bold text-orange-600 mb-2">π</div>
+              <div className="text-sm text-orange-700">Pi (3.14159...)</div>
+              <div className="text-xs text-orange-500">Ratio of circumference to diameter</div>
             </div>
-            <div className="text-center p-4 bg-pink-50 rounded-lg">
-              <div className="text-3xl font-mono font-bold text-pink-600 mb-2">e</div>
-              <div className="text-sm text-pink-700">Euler's Number (2.71828...)</div>
-              <div className="text-xs text-pink-500">Base of natural logarithm</div>
+            <div className="text-center p-4 bg-orange-50 rounded-lg">
+              <div className="text-3xl font-mono font-bold text-orange-600 mb-2">e</div>
+              <div className="text-sm text-orange-700">Euler's Number (2.71828...)</div>
+              <div className="text-xs text-orange-500">Base of natural logarithm</div>
             </div>
-            <div className="text-center p-4 bg-pink-50 rounded-lg">
-              <div className="text-3xl font-mono font-bold text-pink-600 mb-2">√</div>
-              <div className="text-sm text-pink-700">Square Root</div>
-              <div className="text-xs text-pink-500">Find the principal square root</div>
+            <div className="text-center p-4 bg-orange-50 rounded-lg">
+              <div className="text-3xl font-mono font-bold text-orange-600 mb-2">√</div>
+              <div className="text-sm text-orange-700">Square Root</div>
+              <div className="text-xs text-orange-500">Find the principal square root</div>
             </div>
           </div>
         </motion.div>

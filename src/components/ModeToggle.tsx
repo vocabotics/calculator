@@ -7,14 +7,14 @@ const ModeToggle: React.FC = () => {
   const { mode, setMode } = useCalculatorStore();
 
   return (
-    <div className="flex bg-pink-100 rounded-lg p-1 mb-4">
+    <div className="flex bg-orange-100 rounded-lg p-1 mb-4">
       <Button
         onClick={() => setMode('basic')}
         variant={mode === 'basic' ? 'default' : 'ghost'}
         className={`flex-1 flex items-center gap-2 ${
           mode === 'basic' 
-            ? 'bg-white shadow-sm text-pink-900' 
-            : 'hover:bg-pink-200 text-pink-700'
+            ? 'bg-white shadow-sm text-orange-900' 
+            : 'hover:bg-orange-200 text-orange-700'
         }`}
       >
         <Calculator className="h-4 w-4" />
@@ -25,8 +25,8 @@ const ModeToggle: React.FC = () => {
         variant={mode === 'scientific' ? 'default' : 'ghost'}
         className={`flex-1 flex items-center gap-2 ${
           mode === 'scientific' 
-            ? 'bg-white shadow-sm text-pink-900' 
-            : 'hover:bg-pink-200 text-pink-700'
+            ? 'bg-white shadow-sm text-orange-900' 
+            : 'hover:bg-orange-200 text-orange-700'
         }`}
       >
         <FlaskConical className="h-4 w-4" />

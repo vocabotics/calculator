@@ -24,13 +24,13 @@ const CalculatorHistory: React.FC<CalculatorHistoryProps> = ({ onSelectCalculati
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Clock className="h-5 w-5 text-pink-600" />
+            <Clock className="h-5 w-5 text-orange-600" />
             Calculation History
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="text-center text-gray-500 py-8">
-            <Clock className="h-12 w-12 mx-auto mb-3 opacity-30 text-pink-300" />
+            <Clock className="h-12 w-12 mx-auto mb-3 opacity-30 text-orange-300" />
             <p>No calculations yet</p>
             <p className="text-sm">Your calculation history will appear here</p>
           </div>
@@ -44,14 +44,14 @@ const CalculatorHistory: React.FC<CalculatorHistoryProps> = ({ onSelectCalculati
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center gap-2">
-            <Clock className="h-5 w-5 text-pink-600" />
+            <Clock className="h-5 w-5 text-orange-600" />
             History ({history.length})
           </CardTitle>
           <Button
             onClick={clearHistory}
             variant="outline"
             size="sm"
-            className="text-pink-600 hover:text-pink-700 border-pink-300 hover:border-pink-400"
+            className="text-orange-600 hover:text-orange-700 border-orange-300 hover:border-orange-400"
           >
             <Trash2 className="h-4 w-4 mr-1" />
             Clear
@@ -64,19 +64,19 @@ const CalculatorHistory: React.FC<CalculatorHistoryProps> = ({ onSelectCalculati
             {history.map((entry) => (
               <div
                 key={entry.id}
-                className="p-3 bg-pink-50 rounded-lg hover:bg-pink-100 cursor-pointer transition-colors"
+                className="p-3 bg-orange-50 rounded-lg hover:bg-orange-100 cursor-pointer transition-colors"
                 onClick={() => handleSelectCalculation(entry.result)}
               >
                 <div className="flex justify-between items-start">
                   <div className="flex-1">
-                    <div className="text-sm text-pink-600 mb-1">
+                    <div className="text-sm text-orange-600 mb-1">
                       {entry.expression}
                     </div>
-                    <div className="font-mono text-lg font-semibold text-pink-900">
+                    <div className="font-mono text-lg font-semibold text-orange-900">
                       = {entry.result}
                     </div>
                   </div>
-                  <div className="text-xs text-pink-400 ml-2">
+                  <div className="text-xs text-orange-400 ml-2">
                     {format(entry.timestamp, 'HH:mm')}
                   </div>
                 </div>
